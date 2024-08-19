@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        nav ul {
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .hero {
+            background: url('toy-store.jpg') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .section {
+            padding: 20px 0;
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .section h2 {
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            background: #e2e2e2;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            width: 30%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Welcome to the Toy Shop</h1>
+    </section>
+
+    <div class="container">
+        <section class="section" id="products">
+            <h2>Featured Toys</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="toy1.jpg" alt="Toy 1">
+                    <h3>Toy 1</h3>
+                    <p>$19.99</p>
+                </div>
+                <div class="product">
+                    <img src="toy2.jpg" alt="Toy 2">
+                    <h3>Toy 2</h3>
+                    <p>$29.99</p>
+                </div>
+                <div class="product">
+                    <img src="toy3.jpg" alt="Toy 3">
+                    <h3>Toy 3</h3>
+                    <p>$15.99</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <h2>About Us</h2>
+            <p>Welcome to our toy shop! We offer a wide range of toys for children of all ages. Our mission is to provide high-quality and fun toys that make every child’s playtime special. Visit us to discover the best selection of toys and games.</p>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Toy Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
